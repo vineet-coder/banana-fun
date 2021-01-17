@@ -19,7 +19,7 @@ function clickHandler()
     var textInput = txtinput.Value
 
 
-fetch(getTranslateURL(textInput))
+fetch(getTranslationURL(textInput))
 .then(response => response.json())
 .then(json =>
     {
