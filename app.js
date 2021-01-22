@@ -9,8 +9,8 @@ function getTranslationURL(input) {
 }
 
 function errorHandler(error) {
-  console.log("error occured", error);
-  alert("there is something wrong in the server please tyr fter some time");
+  console.log("error occurred", error);
+  alert("there is something wrong in the server please tyr after some time");
 }
 
 function clickHandler() {
@@ -19,8 +19,8 @@ function clickHandler() {
   fetch(getTranslationURL(textInput))
     .then((response) => response.json())
     .then((json) => {
-      var traslatedText = json.contents.translated;
-      outputDiv.innerText = traslatedText;
+      var translatedText = json.contents.translated;
+      outputDiv.innerText = translatedText;
     })
     .catch(errorHandler);
 }
